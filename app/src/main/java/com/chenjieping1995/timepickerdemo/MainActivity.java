@@ -1,5 +1,6 @@
 package com.chenjieping1995.timepickerdemo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -54,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         picker.show();
+    }
+
+    public void onNestView(View view) {
+        startActivity(new Intent(this, NextActivity.class));
     }
 
     private void showToast(String msg) {

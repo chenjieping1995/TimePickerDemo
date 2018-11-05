@@ -40,6 +40,13 @@
                 android:onClick="onNumberPicker2"
                 android:text="时间选择器--普通列表"/>
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Button.Style"
+                android:onClick="onNestView"
+                android:text="内嵌选择器--二级联动"/>
+
         </LinearLayout>
 
     </ScrollView>

@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- do not forget to register activity in the manifest file -->
+        <activity android:name="com.chenjieping1995.timepickerdemo.NextActivity" />
+
     </application>
 
 </manifest>
