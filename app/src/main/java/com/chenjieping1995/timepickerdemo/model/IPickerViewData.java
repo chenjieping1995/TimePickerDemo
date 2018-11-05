@@ -7,5 +7,6 @@ package com.chenjieping1995.timepickerdemo.model;
  */
 
 public interface IPickerViewData {
+    // 对于内容为文本的滚轮，获取其View的内容
     String getPickerViewText();
 }

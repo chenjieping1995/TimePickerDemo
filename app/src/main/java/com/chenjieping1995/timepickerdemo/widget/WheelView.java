@@ -165,7 +165,7 @@ public class WheelView extends View {
             a.recycle();//回收内存
         }
 
-        judgeLineSpae();
+        judgeLineSpace();
 
         initWheelView(context);
     }
@@ -173,7 +173,7 @@ public class WheelView extends View {
     /**
      * 判断间距是否在1.0-2.0之间
      */
-    private void judgeLineSpae() {
+    private void judgeLineSpace() {
         if (lineSpacingMultiplier < 1.2f) {
             lineSpacingMultiplier = 1.2f;
         } else if (lineSpacingMultiplier > 2.0f) {
@@ -206,6 +206,7 @@ public class WheelView extends View {
         paintCenterText = new Paint();
         paintCenterText.setColor(textColorCenter);
         paintCenterText.setAntiAlias(true);
+        // 字体横向拉伸为默认值的1.1倍
         paintCenterText.setTextScaleX(1.1F);
         paintCenterText.setTypeface(typeface);
         paintCenterText.setTextSize(textSize);
@@ -827,7 +828,7 @@ public class WheelView extends View {
 
 
             this.lineSpacingMultiplier = lineSpacingMultiplier;
-            judgeLineSpae();
+            judgeLineSpace();
 
         }
     }

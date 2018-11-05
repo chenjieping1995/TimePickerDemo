@@ -31,7 +31,14 @@
                 android:layout_height="wrap_content"
                 style="@style/Button.Style"
                 android:onClick="onNumberPicker"
-                android:text="时间选择器"/>
+                android:text="时间选择器--3D滚轮"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Button.Style"
+                android:onClick="onNumberPicker2"
+                android:text="时间选择器--普通列表"/>
 
         </LinearLayout>
 
